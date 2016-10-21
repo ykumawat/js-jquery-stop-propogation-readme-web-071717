@@ -62,7 +62,7 @@ Go ahead and first click `Ruby` in the browser to hide the details. Then click t
 
 In jQuery, all click events "bubble up" the DOM. The `document` object knows about every event that is triggered on a page. This means that in our example above, the `span` with the `x` is a child of the `li` with the class `course`. When we click the `x`, that click event bubbles up the DOM and the parent element, the `li`, knows a click event has been triggered, which in turn triggers the `li`'s click event.
 
-What in the world? Why is that behavior we would want? In most cases you wouldn't at all. Imagine if you had a large series of nested elements all with click events. Firing the click event of the innermost child would trigger the click events of every single parent.
+What in the world? Why is that behavior we would want? In most cases, it's not the desired behavior. Imagine if you had a large series of nested elements all with click events. Firing the click event of the innermost child would trigger the click events of every single parent.
 
 ## Stop Propagation
 
@@ -89,3 +89,5 @@ Go ahead and comment out all the code in `js/script.js` except the code under th
 + [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-jquery-stop-propogation-readme' title='Stop Propagation'>Stop Propagation</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/js-jquery-stop-propogation-readme'>Stop Propogation</a> on Learn.co and start learning to code for free.</p>
